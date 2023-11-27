@@ -87,13 +87,34 @@
 
 // Q9 write an js question make every word capiting for given sting 
 
-let str = 'basuraj how are you'
+// let str = 'basuraj how are you'
 
-function makeCaps(str) {
-  let capsstr = str.split(' ').map(function(word) {
-    return word.charAt(0).toUpperCase() + word.substring(1)
-  })
-  return capsstr.join(' ')
+// function makeCaps(str) {
+//   let capsstr = str.split(' ').map(function(word) {
+//     return word.charAt(0).toUpperCase() + word.substring(1)
+//   })
+//   return capsstr.join(' ')
+// }
+
+// console.log(makeCaps(str))
+
+// Q11 write a java script function to get the number of occureence of ech letter in speciied string
+
+let str = 'basuraj'
+
+function countOcc(str) {
+  let countOccDic = {}
+str.split('').forEach(function(word){
+  if(countOccDic.hasOwnProperty(word) == false){
+    countOccDic[word]=1
+  }
+  else{
+    countOccDic[word] ++
+  }
+})
+
+  return countOccDic
+  
 }
 
-console.log(makeCaps(str))
+console.log(countOcc(str))
