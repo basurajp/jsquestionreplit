@@ -65,3 +65,12 @@
 //   return rev
 // }
 // console.log(reversekar(num))
+
+// Q7 chech weather string is palidrome or not 
+// let str = 'raju'
+
+// function checkPlaidrome(str) {
+//   let reversed = str.split('').reverse().join('')
+//   return reversed === str
+// }
+// console.log(checkPlaidrome(str))
