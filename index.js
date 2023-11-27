@@ -74,3 +74,13 @@
 //   return reversed === str
 // }
 // console.log(checkPlaidrome(str))
+
+// Q8 wrtite an java sript that return  a pass string with letter in aphbetical order
+
+let str = 'basurj'
+
+function makeitAlph(str){
+  return str.split('').sort().join('')
+}
+
+console.log(makeitAlph(str))
