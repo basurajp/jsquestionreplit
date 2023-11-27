@@ -43,4 +43,25 @@
 
 // console.log(dublicate(arr))
 
+// Q6  reverse the number 
+// method 1 
+// let a = 12
+// function reverse(n){
+//  return  Number(  n.toString().split('').reverse().join('')
+// )
+// }
 
+// console.log(reverse(a))
+
+// method 2 
+// let num = 123
+// let rev = 0
+// function reversekar(num) {
+//   while (num > 0) {
+//     rem = num % 10
+//     rev = rev * 10 + rem
+//     num = Math.floor(num / 10)
+//   }
+//   return rev
+// }
+// console.log(reversekar(num))
