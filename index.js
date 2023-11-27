@@ -77,10 +77,23 @@
 
 // Q8 wrtite an java sript that return  a pass string with letter in aphbetical order
 
-let str = 'basurj'
+// let str = 'basurj'
 
-function makeitAlph(str){
-  return str.split('').sort().join('')
+// function makeitAlph(str){
+//   return str.split('').sort().join('')
+// }
+
+// console.log(makeitAlph(str))
+
+// Q9 write an js question make every word capiting for given sting 
+
+let str = 'basuraj how are you'
+
+function makeCaps(str) {
+  let capsstr = str.split(' ').map(function(word) {
+    return word.charAt(0).toUpperCase() + word.substring(1)
+  })
+  return capsstr.join(' ')
 }
 
-console.log(makeitAlph(str))
+console.log(makeCaps(str))
