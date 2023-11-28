@@ -114,7 +114,7 @@
 // })
 
 //   return countOccDic
-  
+
 // }
 
 // console.log(countOcc(str))
@@ -124,13 +124,26 @@
 // Objective: Write a function to reverse each word in a sentence.
 // Q12 lopp an array and add all meember of it 
 
-let arr  = [1,3,5,6,7,]
+// let arr  = [1,3,5,6,7,]
 
-sum = 0 
+// sum = 0 
 
-arr.forEach(function(elem){
-  sum  = sum +elem
+// arr.forEach(function(elem){
+//   sum  = sum +elem
+// })
+
+
+// console.log(sum )
+
+// Q13  in an arry of number and strings , only add those member  which are not string 
+
+let arr = [1, 3, 5, 6, 'f', 6, 'e']
+sum = 0
+arr.forEach(function(ele) {
+  if (typeof ele === 'number') {
+    sum = sum + ele
+  }
+
 })
 
-
-console.log(sum )
+console.log(sum)
