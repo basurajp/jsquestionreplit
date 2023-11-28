@@ -150,24 +150,24 @@
 
 // Q14 loop an array of objects and remove all objects which don't have gender value male 
 
-let arr = [
-  {
-    name: 'Basuraj',
-    gender: 'male'
-  },
-  {
-    name: 'srikant',
-    gender: 'male'
-  },
-  {
-    name: 'ramya',
-    gender: 'female'
-  },
-  {
-    name: 'sajana',
-    gender: 'male'
-  },
-]
+// let arr = [
+//   {
+//     name: 'Basuraj',
+//     gender: 'male'
+//   },
+//   {
+//     name: 'srikant',
+//     gender: 'male'
+//   },
+//   {
+//     name: 'ramya',
+//     gender: 'female'
+//   },
+//   {
+//     name: 'sajana',
+//     gender: 'male'
+//   },
+// ]
 // method 1 
 
 // let newArr = arr.filter(function(elem){
@@ -178,19 +178,41 @@ let arr = [
 
 // method 2 
 
-let count = 0
-arr.forEach(function(elem) {
-  if (elem !== 'male') count++
+// let count = 0
+// arr.forEach(function(elem) {
+//   if (elem !== 'male') count++
 
-})
-console.log(count)
+// })
+// console.log(count)
 
-for (j = 0; j <= count; j++) {
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i].gender !== 'male') {
-      arr.splice(i, 1)
-    }
-  }
-}
+// for (j = 0; j <= count; j++) {
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i].gender !== 'male') {
+//       arr.splice(i, 1)
+//     }
+//   }
+// }
 
-console.log(arr)
+// console.log(arr)
+
+// Q15 clone and arry 
+
+// method 1 
+// function clonedArr(arr){
+//   return [...arr]
+// }
+// let newarr = clonedArr([1,3,5,7,8])
+// console.log(newarr)
+
+// method2 
+
+// function clonedArr(arr){
+//   let newArr = []
+//   arr.forEach(function(ele){
+//     newArr.push(ele)
+//   })
+//    return newArr
+// }
+
+// let clonedNewArr = clonedArr([1,4,6,7])
+// console.log(clonedNewArr)
