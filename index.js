@@ -100,21 +100,37 @@
 
 // Q11 write a java script function to get the number of occureence of ech letter in speciied string
 
-let str = 'basuraj'
+// let str = 'basuraj'
 
-function countOcc(str) {
-  let countOccDic = {}
-str.split('').forEach(function(word){
-  if(countOccDic.hasOwnProperty(word) == false){
-    countOccDic[word]=1
-  }
-  else{
-    countOccDic[word] ++
-  }
+// function countOcc(str) {
+//   let countOccDic = {}
+// str.split('').forEach(function(word){
+//   if(countOccDic.hasOwnProperty(word) == false){
+//     countOccDic[word]=1
+//   }
+//   else{
+//     countOccDic[word] ++
+//   }
+// })
+
+//   return countOccDic
+  
+// }
+
+// console.log(countOcc(str))
+
+
+// exersise based on these HTMLOptionsCollection
+// Objective: Write a function to reverse each word in a sentence.
+// Q12 lopp an array and add all meember of it 
+
+let arr  = [1,3,5,6,7,]
+
+sum = 0 
+
+arr.forEach(function(elem){
+  sum  = sum +elem
 })
 
-  return countOccDic
-  
-}
 
-console.log(countOcc(str))
+console.log(sum )
