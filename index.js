@@ -137,13 +137,60 @@
 
 // Q13  in an arry of number and strings , only add those member  which are not string 
 
-let arr = [1, 3, 5, 6, 'f', 6, 'e']
-sum = 0
-arr.forEach(function(ele) {
-  if (typeof ele === 'number') {
-    sum = sum + ele
-  }
+// let arr = [1, 3, 5, 6, 'f', 6, 'e']
+// sum = 0
+// arr.forEach(function(ele) {
+//   if (typeof ele === 'number') {
+//     sum = sum + ele
+//   }
+
+// })
+
+// console.log(sum)
+
+// Q14 loop an array of objects and remove all objects which don't have gender value male 
+
+let arr = [
+  {
+    name: 'Basuraj',
+    gender: 'male'
+  },
+  {
+    name: 'srikant',
+    gender: 'male'
+  },
+  {
+    name: 'ramya',
+    gender: 'female'
+  },
+  {
+    name: 'sajana',
+    gender: 'male'
+  },
+]
+// method 1 
+
+// let newArr = arr.filter(function(elem){
+//   return elem.gender ==='male'
+// })
+
+// console.log(newArr)
+
+// method 2 
+
+let count = 0
+arr.forEach(function(elem) {
+  if (elem !== 'male') count++
 
 })
+console.log(count)
 
-console.log(sum)
+for (j = 0; j <= count; j++) {
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].gender !== 'male') {
+      arr.splice(i, 1)
+    }
+  }
+}
+
+console.log(arr)
